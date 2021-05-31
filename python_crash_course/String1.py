@@ -1,13 +1,15 @@
 # This is a test file 
 
+import string
+
 hw="Hello World"
 
 print(hw)
 
 
-string1 = "My Name is "
+string1 = "my Name is "
 string2 = "Terry"
-print(string1 + string2)
+print(string1.upper().strip() + string2) # note we can do method chaining 
 
 # tells the memory location of our object
 print(id(string1) + id(string2)) # see the id value for the variable
@@ -38,3 +40,16 @@ print(len(nums))
 
 # what is the data type?
 print(type(nums))
+
+message = "Blah Blah Findme Blah" 
+
+print(message.find('Findme'))
+
+split_message = message.split()
+
+print(split_message) #separates words based on whitespace 
+
+print("-".join(split_message))
+
+
+print(string.ascii_lowercase) #import all lowercase letters
