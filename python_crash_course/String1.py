@@ -53,3 +53,8 @@ print("-".join(split_message))
 
 
 print(string.ascii_lowercase) #import all lowercase letters
+
+stock_price = "1100"  
+print("Today's price for google stock is: {}".format(stock_price))
+
+print(f"Today's price for google stock is: {stock_price}")
