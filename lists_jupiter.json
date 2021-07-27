@@ -1,0 +1,411 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.6"
+  },
+  "orig_nbformat": 4,
+  "kernelspec": {
+   "name": "python3",
+   "display_name": "Python 3.9.6 64-bit (windows store)"
+  },
+  "interpreter": {
+   "hash": "ad250f64a57e6b35d42f7539fcacc8fd2c4c3943b689b18debf672e6f24194f3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[4, 6, 7, 8, 10, 12, 14, 15, 35]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10] \n",
+    "print(sorted(my_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[4, 6, 7, 8, 10, 12, 14, 15, 35]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# sort method will sort this list in place \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10] \n",
+    "my_list.sort()  \n",
+    "sorted_list = sorted(my_list)\n",
+    "print(sorted_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Finding info \n",
+    "my_strings_list = [\"comp sci\", \"physics\", \"elec engr\", \"philosophy\"] \n",
+    "print(\"physics\" in my_strings_list)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Find a location in a list \n",
+    "my_strings_list = [\"comp sci\", \"physics\", \"elec engr\", \"philosophy\"]  \n",
+    "print(my_strings_list.index(\"physics\"))\n",
+    "# index starts at 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_strings_list = [\"comp sci\", \"physics\", \"elec engr\", \"philosophy\"]  \n",
+    "print(len(my_strings_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "philosophy\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_strings_list = [\"comp sci\", \"physics\", \"elec engr\", \"philosophy\"]  \n",
+    "# find the last element in a list \n",
+    "print(my_strings_list[-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]  \n",
+    "print(min(my_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']\n1\n"
+     ]
+    }
+   ],
+   "source": [
+    "# see methods available to your function \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "print(dir(my_list)) \n",
+    "print(my_list.count(15))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 6, 7, 8, 35, 12, 14, 4, 10, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# append() insert() extend() \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "my_list.append(30) \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 6, 7, 8, 25, 35, 12, 14, 4, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#insert \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10] \n",
+    "my_list.insert(4, 25) \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 6, 7, 8, 35, 12, 14, 4, 10, 999, 9990]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# extend\n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]  \n",
+    "my_new_list = [999, 9990] \n",
+    "my_list.extend(my_new_list) \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[6, 7, 8, 35, 12, 14, 4, 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# REMOVE \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "my_list.remove(15) \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "4\n[15, 6, 7, 8, 35, 12, 14]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# POP \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "my_list.pop() # removes last object in list\n",
+    "print(my_list.pop())\n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 6, 7, 8, 35, 12, 14, 4, 1000]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# sublists \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "# lists are mutable\n",
+    "my_list[-1] = 1000 \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 6, 7, 8]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "print(my_list[0:4]) \n",
+    "# print(my_list[:4])\n",
+    "# stop index is not included in the slice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[15, 7, 35]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# step size\n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "print(my_list[0:6:2]) \n",
+    "\n",
+    "# stop index is not included in the slice"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[10, 4, 14, 12, 35, 8, 7, 6, 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "# give the list in reverse order\n",
+    "print(my_list[::-1]) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "[10, 4, 14, 12, 35, 8, 7, 6, 15]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "# give the list in reverse order\n",
+    "my_list.reverse() \n",
+    "print(my_list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "15\n6\n7\n8\n35\n12\n14\n4\n10\n"
+     ]
+    }
+   ],
+   "source": [
+    "# simple for loop \n",
+    "my_list = [15, 6, 7, 8, 35, 12, 14, 4, 10]   \n",
+    "for item in my_list: \n",
+    "    print(item)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}
